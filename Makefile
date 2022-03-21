@@ -9,3 +9,6 @@ a:
 m:
 	RUSTFLAGS="--emit miri" cargo run
 	# cargo +nightly miri run
+
+o:
+	cat input.txt | cargo run
