@@ -1,3 +1,6 @@
+o:
+	cat input.txt | cargo run
+	
 b:
 	hyperfine cargo run >> benchmark.txt
 p:
@@ -10,5 +13,3 @@ m:
 	RUSTFLAGS="--emit miri" cargo run
 	# cargo +nightly miri run
 
-o:
-	cat input.txt | cargo run

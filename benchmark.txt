@@ -13,3 +13,8 @@ Benchmark 1: cargo
   Range (min … max):    63.9 ms …  76.5 ms    39 runs
  
 Benchmark 2: run
+Benchmark 1: cargo
+  Time (mean ± σ):      67.1 ms ±   5.1 ms    [User: 60.2 ms, System: 7.0 ms]
+  Range (min … max):    63.9 ms …  87.9 ms    37 runs
+ 
+Benchmark 2: run
