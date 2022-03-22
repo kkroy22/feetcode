@@ -7,34 +7,15 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug unit tests in library 'leetcode'",
-            "cargo": {
-                "args": [
-                    "test",
-                    "--no-run",
-                    "--lib",
-                    "--package=leetcode"
-                ],
-                "filter": {
-                    "name": "leetcode",
-                    "kind": "lib"
-                }
-            },
-            "args": [],
-            "cwd": "${workspaceFolder}"
-        },
-        {
-            "type": "lldb",
-            "request": "launch",
-            "name": "Debug executable 'leetcode'",
+            "name": "Debug executable 'feetcode'",
             "cargo": {
                 "args": [
                     "build",
-                    "--bin=leetcode",
-                    "--package=leetcode"
+                    "--bin=feetcode",
+                    "--package=feetcode"
                 ],
                 "filter": {
-                    "name": "leetcode",
+                    "name": "feetcode",
                     "kind": "bin"
                 }
             },
@@ -44,16 +25,16 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug unit tests in executable 'leetcode'",
+            "name": "Debug unit tests in executable 'feetcode'",
             "cargo": {
                 "args": [
                     "test",
                     "--no-run",
-                    "--bin=leetcode",
-                    "--package=leetcode"
+                    "--bin=feetcode",
+                    "--package=feetcode"
                 ],
                 "filter": {
-                    "name": "leetcode",
+                    "name": "feetcode",
                     "kind": "bin"
                 }
             },

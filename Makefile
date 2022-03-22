@@ -1,15 +1,19 @@
-o:
+run:
+	make fmt
 	cat input.txt | cargo run
 	
-b:
+bench:
 	hyperfine cargo run >> benchmark.txt
-p:
+
+flame:
 	cargo flamegraph --dev
 
-a:
+asm:
 	cargo asm --rust leetcode::main
 
-m:
+miri:
 	RUSTFLAGS="--emit miri" cargo run
 	# cargo +nightly miri run
 
+fmt:
+	cargo fmt
